@@ -101,7 +101,7 @@ class App extends Component {
                     {meals[meal]
                       ? <div className='food-item'>
                           <img src={meals[meal].image} alt={meals[meal].label}/>
-                          <button onClick={() => remove({meal, day})}>Clear</button>
+                          <button onClick={() => remove({day,recipe:null,meal})}>Clear</button>
                         </div>
                       : <button onClick={() => this.openFoodModal({meal, day})} className='icon-btn'>
                           <CalendarIcon size={30}/>
